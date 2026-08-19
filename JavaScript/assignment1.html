@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+</head>
+<body>
+    <div style="text-align: center; width: 300px; height: 300px; border: 2px solid black; ">
+    <h2>Online Shop</h2>
+
+    <p>Tea = 100</p>
+    <p>Coffee = 200</p>
+    <p>Rice = 500</p>
+    <p>Aata = 700</p>
+
+    <button onclick="buy()">Buy Now</button>
+    </div>
+    <script>
+        function buy() {
+
+            let a = prompt("Enter the product name:");
+            let b = Number(prompt("Enter the quantity:"));
+            if (a == "Tea") {
+                let c = 100 * b;
+                alert("Total price is: " + c);
+            } else if (a == "Coffee") {
+                let c = 200 * b;
+                alert("Total price is: " + c);
+            } else if (a == "Rice") {
+                let c = 500 * b;
+                alert("Total price is: " + c);
+            } else if (a == "Aata") {
+                let c = 700 * b;
+                alert("Total price is: " + c);
+            } else {
+                alert("Product not available");
+            }     
+        }
+    </script>
+
+</body>
+</html>
